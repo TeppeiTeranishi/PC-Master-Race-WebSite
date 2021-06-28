@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+/*----------------------------------------
+SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
+------------------------------------------*/
+
+.bg-primary {
+    background-color: rgba(0,0,0,1) !important;
+}
+.bg-primary1 {
+    background-color: blanchedalmond !important;
+}
+
+.text-primary {
+    color: #000 !important;
+}
+
+.btn-primary {
+    background-color: #000 !important;
+    border-color: yellow !important;
+    color: goldenrod !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: goldenrod !important;
+    color: black !important;
+}
+
+.btn-primary:active {
+    background-color: goldenrod !important;
+    border-color: goldenrod !important;
+}
+
+.btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem  rgba(218, 165, 32, 0.5) !important;
+    box-shadow: 0 0 0 0.2rem  rgba(0, 0, 0, 0.5) !important;
+}
+
+/*--------------------------
+ESTILOS DEL DISEÑO
+---------------------------*/
+body {
+    color: #44484a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav.navbar {
+    background-color: #000000;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 0 10px #0c0c0c3b;
+    box-shadow: 0 0 10px #0c0c0c3b;
+}
+
+#testimonial{
+    background: #f1f1f1;
+    pad: 50px 0 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+/* This is for about us */
+#header{
+    margin-top: 150px;
+}
+
+/*--------------------------
+MAIN CAROUSEL STYLES
+---------------------------*/
+.carousel-inner img {
+    width: 100%;
+    max-height: 100vh;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+
+/* CAROUSEL CLIENTS ABOUT US*/
+.brands {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.brands_slider_container {
+    height: 130px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 97px;
+    padding-right: 97px;
+}
+
+.brands_slider {
+    height: 100%;
+    margin-top: 10px;
+}
+
+.brands_item {
+    height: 100%;
+}
+
+.brands_item img {
+    max-width: 20vmax;
+    height: 100px;
+}
+
+.brands_nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.brands_nav i {
+    color: goldenrod;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.brands_nav:hover i {
+    color: #000;
+}
+
+.brands_prev {
+    left: 40px;
+}
+
+.brands_next {
+    right: 40px;
+}
+
+/*------------------------
+SHOW DE LOS MEDIAS QUERIES
+------------------------*/
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+/* BARRA DE SCROLL */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+    background-color: goldenrod; 
+    background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,transparent)
+}
+/* TERMINA BARRA DE SCROLL */
+
+
+/* BOTON DE SUBIR */
+.go-top-container{
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    width: 6.6rem;
+    height: 7.6rem;
+    z-index: -1;
+}
+
+.go-top-button{
+    width: 0px;
+    height: 0px;
+    background: goldenrod;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .2s;
+}
+
+.go-top-button:hover, 
+.go-top-container:hover i{
+    background-color: black;
+    color: yellow;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 2.6rem;
+    height: 2.6rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* VENTANA MODAL */
+.modalDialog {
+	position: fixed;
+	font-family: 'Roboto', sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: linear-gradient(#DAA520, #999);
+    color: #000;
+	background: -moz-linear-gradient(#DAA520, #999);
+	/* background: -webkit-linear-gradient(#fff, #999); */
+	background: -o-linear-gradient(#fff, #999);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: goldenrod; }
+
+/* SOCIAL MEDIA LOGOS  */
+.fab{
+    width: 55px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.social{
+    position: fixed;
+    left: -40px;
+    top:275px;
+}
+
+.sociaL ul{
+    list-style: none;
+}
+
+.social a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 0;
+    transition: 0.9s ease;
+}
+
+.fa-facebook-f{
+    background: #3b5998;
+}
+
+.fa-twitter{
+    background: #00abf0;
+}
+.fa-instagram{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fa-steam{
+    background:linear-gradient(120deg, #00adee, #000000);
+}
+.fa-discord{
+    background: linear-gradient(-50deg, #7289DA, #fff);
+}
+.fa-mixer{
+background: #3498DB;
+}
+
+.social a:hover{
+    padding: 10px 40px;
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}

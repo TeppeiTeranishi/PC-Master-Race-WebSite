@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- MODERNIZE -->
+    <script src="../JS/modernizr-custom.js"></script>
+    <!-- ARCHIVOS CSS PERSONALIZADOS -->
+    <link type="text/css" rel="stylesheet" href="../css/estilos.css">
+    <!-- ARCHIVOS CSS BOOTSTRAP 4 -->
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- GOOGLEFONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Icono Ventana -->
+    <link rel="icon" href="../images/LogoPC.png" type="image/png">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>About Us | PC Master Race</title>
+    <script src="../js/carousel_aboutus.js"></script>
+
+
+    <!-- CAROUSEL ABOUT US -->
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type='text/javascript'>$(document).ready(function(){
+
+        if($('.brands_slider').length)
+        {
+        var brandsSlider = $('.brands_slider');
+        
+        brandsSlider.owlCarousel(
+        {
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        nav:false,
+        dots:false,
+        autoWidth:true,
+        items:8,
+        margin:42
+        });
+        
+        if($('.brands_prev').length)
+        {
+        var prev = $('.brands_prev');
+        prev.on('click', function()
+        {
+        brandsSlider.trigger('prev.owl.carousel');
+        });
+        }
+        
+        if($('.brands_next').length)
+        {
+        var next = $('.brands_next');
+        next.on('click', function()
+        {
+        brandsSlider.trigger('next.owl.carousel');
+        });
+        }
+        }
+        
+        
+        });
+    </script>
+
+
+</head>
+<body>
+    <!-- SECCION NAVEGACIÓN-->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <section class="container">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../images/LogoPC.png" class="img-circle" width="100" height="100" alt="PC Master Race">
+                <Strong>PC MASTER RACE</Strong>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <section class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="../index.html" class="nav-link active">HOME</a></li>
+                    <li class="nav-item"><a href="../html/about_us.html" class="nav-link">ABOUT US</a></li>
+                    <li class="nav-item"><a href="../html/builds.html" class="nav-link">BUILDS</a></li>
+                    <li class="nav-item"><a href="../html/contact_us.html" class="nav-link">CONTACT US</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+
+    <!-- SECTION OF SOCIAL -->
+    <section class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/OfficialPCMasterRace" class="fab fa-facebook-f" target="noopener"></a></li>
+          <li><a href="https://twitter.com/OfficialPCMR" class="fab fa-twitter" target="noopener"></a></li>
+          <li><a href="https://www.instagram.com/pcmasterrace_official/" class="fab fa-instagram" target="noopener"></a></li>
+          <li><a href="https://steamcommunity.com/groups/steampcmasterrace" class="fab fa-steam" target="noopener"></a></li>
+          <li><a href="https://discordapp.com/invite/pcmr" class="fab fa-discord" target="noopener"></a></li>
+          <li><a href="https://mixer.com/" class="fab fa-mixer" target="noopener"></a></li>
+        </ul>
+      </section>
+
+    <section>
+        <section id="header">
+            <section class="container">
+                <section class="row">
+                    <section class="col-md-6">
+                        <section class="header-content-left">
+                            <img src="../images/custom2.jpg" alt="Team US PC" style="width: 100%;">
+                        </section>
+                    </section>
+                    <section class="col-md-6">
+                        <section class="header-content-right">
+                            <h1 class="display-5 font-weight-bold">WHAT IS PC MASTER RACE</h1>
+                            <p class="mt-1">
+                                Gamers who invest time and money into their personal computer and use it as their main gaming platform with the graphic settings cranked up to maximum. Unlike the dirty console peasants, members of the glorious PC gaming master race have the freedom to upgrade their hardware, overclock, modify their game files, and play games at a level of quality unobtainable on consoles. 
+                            </p>
+                            <p>
+                                While anyone can go out and buy a powerful gaming computer which comes pre-assembled, many purists will argue that the money saved and experience gained from building a computer yourself is what actually makes someone a member of the PC master race.
+                            </p>
+                            <a href="#openModal5" class="btn btn-primary btn-lg mt-2">Read more</a>
+                            <div id="openModal5" class="modalDialog">
+                                <div>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <h4>You should be a PC Master Race, here the reason</h4>
+                                    <iframe width="470" height="315" src="https://www.youtube.com/embed/y-7j4e4bbT8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonial">
+        <section class="container">
+            <p class="h2 mb-2 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cum officia dolorem molestias aspernatur quam doloribus rem pariatur. Obcaecati aspernatur velit, deserunt incidunt commodi maiores. Nesciunt odit molestiae deleniti cumque.
+            </p>
+            <p class="h4">
+                - Thomas Rigs
+            </p>
+        </section>
+    </section>
+
+    <!-- Info 1 -->
+    <section id="info-one">
+        <section class="container mt-5">
+            <section class="row mt-5">
+                <section class="col-md-6 my-auto">
+                    <section class="info-right">
+                        <h2 class="display-4 font-weight-bold">Lorem ipsum dolor sit.</h2>
+                        <p class="mt-5">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe numquam exercitationem voluptate, in asperiores facere beatae iusto optio quae ex delectus at ipsum? Eaque porro aperiam, sit possimus dolorum nesciunt!
+                            <a href="../html/builds.html" class="btn btn-primary btn-lg mt-5">Read More</a>
+                        </p>
+                    </section>
+                </section>
+                <section class="col-md-6">
+                    <section class="info-left">
+                        <img src="../images/custom.jpg" alt="PC Builds" style="width: 100%;">
+                    </section>
+                </section>
+                
+            </section>
+        </section>
+    </section>
+
+    <!-- Info Two -->
+    <section id="info-two" >
+        <section class="container">
+            <section class="row my-5">
+                <section class="col-md-6">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate sunt inventore esse, odio mollitia obcaecati adipisci facilis aperiam asperiores ex error optio cupiditate, soluta consequuntur magnam, at dignissimos beatae ducimus?
+                    </p>
+                </section>
+                <section class="col-md-6">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate sunt inventore esse, odio mollitia obcaecati adipisci facilis aperiam asperiores ex error optio cupiditate, soluta consequuntur magnam, at dignissimos beatae ducimus?
+                    </p>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Carousel clients -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    <div class="brands">
+        <h3 class="display-4 font-weight-bold text-center pb-4">Our Sponsors</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="brands_slider_container">
+                        <div class="owl-carousel owl-theme brands_slider">
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img src="../images/amd.png" alt="AMD"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img src="../images/intel.png" alt="Intel"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img src="../images/nvidia_01.png" alt="Nvidia"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img src="../images/valve.png" alt="Valve"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img src="../images/asus.png" alt="Asus"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img src="../images/twitch.png"  alt="Twitch"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img src="../images/mixer.png" alt="Mixer"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img src="../images/discord.png" alt="Discord"></div>
+                            </div>
+                        </div> <!-- Brands Slider Navigation -->
+                        <div class="brands_nav brands_prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="brands_nav brands_next"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- SECCION PIE DE PÁGINA -->
+    <footer class="pie-de-pagina text-center text-md-center bg-dark text-white">
+        <div class="container">
+            <p class="m-0 py-4">Copyright © 2020. Todos los derechos reservados. </p>
+            <p class="m-0 py-1">Author: Teppei Teranishi</p>
+        </div>
+    </footer>
+    
+    <!-- BOTON DE SUBIR -->
+    <section class="go-top-container">
+        <section class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </section>
+    </section>
+
+    <!-- ARCHIVOS BOOTSTRAP JAVASCRIPT -->
+    <!-- <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script> -->
+    <!-- BOTON SUBIR -->
+    <script src="../js/gotop.js"></script>
+
+    
+</body>
+</html>

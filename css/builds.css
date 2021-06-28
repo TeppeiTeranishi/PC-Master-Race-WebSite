@@ -1,0 +1,170 @@
+body {
+    background: #181818;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body::after{
+    content: '';
+    background-image: url(../images/background_build.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 25px;
+}
+
+h1 span{
+    color: goldenrod;
+}
+
+.gallery {
+    width: 600px;
+    margin: auto;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 140px;
+    margin-bottom: 10px;
+}
+  
+.img-c {
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+  
+.img-w {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform ease-in-out 300ms;
+}
+
+  
+.img-w img {
+    display: none;
+}
+  
+.img-c {
+    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+  
+.img-c:hover .img-w {
+    transform: scale(1.08);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+  
+.img-c.active {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    z-index: 2;
+}
+  
+.img-c.postactive {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+  
+.img-c.active.positioned {
+    left: 0 !important;
+    top: 0 !important;
+    transition-delay: 50ms;
+}
+  
+footer{
+    background-color: #000;
+    position: absolute;
+    padding-top: 15px;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+/* SOCIAL MEDIA */
+.fab{
+    width: 55px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.social{
+    position: fixed;
+    left: -40px;
+    top:275px;
+}
+
+.sociaL ul{
+    list-style: none;
+}
+
+.social a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 0;
+    transition: 0.9s ease;
+}
+
+.fa-facebook-f{
+    background: #3b5998;
+}
+
+.fa-twitter{
+    background: #00abf0;
+}
+.fa-instagram{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fa-steam{
+    background:linear-gradient(120deg, #00adee, #000000);
+}
+.fa-discord{
+    background: linear-gradient(-50deg, #7289DA, #fff);
+}
+.fa-mixer{
+    background: #3498DB;
+}
+
+.social a:hover{
+    padding: 10px 40px;
+}
+
+/* BARRA DE SCROLL */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+    background-color: goldenrod; 
+    background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,transparent)
+}
+/* TERMINA BARRA DE SCROLL */
