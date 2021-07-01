@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,18 @@
     <!-- ARCHIVOS CSS BOOTSTRAP 4 -->
     <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- GOOGLEFONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Icono Ventana -->
     <link rel="icon" href="../images/LogoPC.png" type="image/png">
     <!-- styles -->
     <link rel="stylesheet" href="../css/contact-us.css">
     <!-- FONTAWESO -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> -->
     <title>Contact Us The Supremacy Of All Things</title>
 </head>
+
 <body>
     <!-- SECCION NAVEGACIÓN-->
     <nav class="navbar navbar-expand-md fixed-top bg-dark">
@@ -27,7 +31,8 @@
                 <img src="../images/LogoPC.png" class="img-circle" width="100" height="100" alt="PC Master Race">
                 <Strong>PC MASTER RACE</Strong>
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar menú de navegación">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -43,74 +48,82 @@
     </nav>
 
 
-    <!-- Formulario -->
-    <section class="content">
-        <h1 class="logo">Contact <span>Us</span></h1>
-        <section class="contact-wrapper animated bounceInUp">
-            <section class="contact-form">
-                <h3>Contact us</h3>
-                <form action="#">
-                    <p>
-                        <label>FullName</label>
-                        <input type="text" name="fullname">
-                    </p>
-                    <p>
-                        <label>Email Adress</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Phone Number</label>
-                        <input type="tel" name="phone">
-                    </p>
-                    <p>
-                        <label>Affair</label>
-                        <input type="text" name="affair">
-                    </p>
-                    <p class="block">
-                       <label>Message</label> 
-                        <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p class="block">
-                        <button>
-                            Send
-                        </button>
-                    </p>
-                </form>
-            </section>
-            <section class="contact-info">
-                <h4>More Info</h4>
-                <ul class="contact">
-                    <li><i class="fas fa-map-marker-alt"></i> Baker Street</li>
-                    <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
-                    <li><i class="fas fa-envelope-open-text"></i> contact@website.com</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
-                <p>Company.com</p>
-                <img src="../images/pcmasterracelogo1.png" alt="">
-            </section>
-        </section>
-    </section>
 
-    <!-- SECTION OF SOCIAL -->
-    <section class="social">
-        <ul>
-          <li><a href="https://www.facebook.com/OfficialPCMasterRace" class="fab fa-facebook-f" target="noopener"></a></li>
-          <li><a href="https://twitter.com/OfficialPCMR" class="fab fa-twitter" target="noopener"></a></li>
-          <li><a href="https://www.instagram.com/pcmasterrace_official/" class="fab fa-instagram" target="noopener"></a></li>
-          <li><a href="https://steamcommunity.com/groups/steampcmasterrace" class="fab fa-steam" target="noopener"></a></li>
-          <li><a href="https://discordapp.com/invite/pcmr" class="fab fa-discord" target="noopener"></a></li>
-          <li><a href="https://mixer.com/" class="fab fa-mixer" target="noopener"></a></li>
-        </ul>
-      </section>
-    
+    <div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title mt-5">
+					Send Us A Message
+				</span>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<label class="label-input100" for="name">Full name</label>
+					<input id="name" class="input100" type="text" name="name" placeholder="Enter your name...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<label class="label-input100" for="email">Email Address</label>
+					<input id="email" class="input100" type="text" name="email" placeholder="Enter your email...">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<label class="label-input100" for="message">Message</label>
+					<textarea id="message" class="input100" name="message" placeholder="Type your message here..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Send
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('../images/pc-back.jpg');">
+			</div>
+		</div>
+	</div>
+
+
 
     <!-- SECCION PIE DE PÁGINA -->
-    <footer>
-        <section>
-            <p>Copyright © 2020. Todos los derechos reservados. </p>
-            <p>Author: Teppei Teranishi</p>
+    <footer class="pie-de-pagina text-center text-md-center bg-dark text-white">
+        <section class="container">
+            <a href="../index.html" class=" navbar-brand">
+                <strong>PC Mast</strong>er Race
+            </a>
+            <ul class="list-inline">
+                <li class="list-inline-item footer-menu"><a href="../index.html">Home</a></li>
+
+                <li class="list-inline-item footer-menu"><a href="../html/about_us.html">About Us</a></li>
+
+
+                <li class="list-inline-item footer-menu"><a href="../html/builds.html">Builds</a></li>
+
+                <li class="list-inline-item footer-menu"><a href="../html/contact_us.html">Contact Us</a></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.facebook.com/PaladinsGameLA" target="noopener"><img
+                            src="../images/facebook.svg" alt="Facebook-PC Master Race"></a></li>
+
+                <li class="list-inline-item"><a href="https://www.instagram.com/paladinsgame/" target="noopener"><img
+                            src="../images/instagram.svg" alt="Instagram-PC Master Race"></a></li>
+
+                <li class="list-inline-item"><a href="https://twitter.com/paladinsgame" target="noopener"><img
+                            src="../images/twitter.svg" alt="Twitter-PC Master Race"></a></li>
+
+                <li class="list-inline-item"><a href="https://www.youtube.com/paladinsgame" target="noopener"><img
+                            src="../images/youtube.svg" alt="YouTube-PC Master Race"></a></li>
+            </ul>
+            <small>©2021 All Rights Reserved. Created by <a href="https://www.instagram.com/teppei_9607/"
+                    class="font-weight-bold" target="noopener" rel="noopener">Teppei Teranishi</a></small>
         </section>
     </footer>
+    <!-- final footer -->
 
 
     <!-- ARCHIVOS BOOTSTRAP JAVASCRIPT -->
@@ -118,4 +131,5 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </body>
+
 </html>
