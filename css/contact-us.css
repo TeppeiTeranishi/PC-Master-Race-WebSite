@@ -33,7 +33,7 @@ footer {
 }
 
 footer a {
-  color: goldenrod;
+  color: #ffcd00;
 }
 
 footer a:hover {
@@ -49,7 +49,7 @@ footer .list-inline .list-inline-item:hover {
 }
 
 footer small {
-  color: goldenrod;
+  color: #ffcd00;
 }
 
 /* //////////////
@@ -355,7 +355,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background: goldenrod;
+  background: #ffcd00;
   color: black;
 }
 

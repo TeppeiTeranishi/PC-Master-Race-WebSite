@@ -18,18 +18,18 @@ SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
 .btn-primary {
     background-color: #000 !important;
     border-color: yellow !important;
-    color: goldenrod !important;
+    color: #ffcd00 !important;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: goldenrod !important;
+    background-color: #ffcd00 !important;
     color: black !important;
 }
 
 .btn-primary:active {
-    background-color: goldenrod !important;
-    border-color: goldenrod !important;
+    background-color: #ffcd00 !important;
+    border-color: #ffcd00 !important;
 }
 
 .btn-primary:focus {
@@ -124,7 +124,7 @@ MAIN CAROUSEL STYLES
 }
 
 .brands_nav i {
-    color: goldenrod;
+    color: #ffcd00;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
@@ -156,7 +156,7 @@ footer {
 
 
 footer a {
-    color: goldenrod;
+    color: #ffcd00;
 }
 
 footer a:hover {
@@ -172,7 +172,7 @@ footer .list-inline .list-inline-item:hover {
 }
 
 footer small{
-    color: goldenrod;
+    color: #ffcd00;
 }
 /* //////////////
    End Footer
@@ -200,7 +200,7 @@ SHOW DE LOS MEDIAS QUERIES
     background-color: #F5F5F5;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: goldenrod; 
+    background-color: #ffcd00; 
     background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,transparent)
 }
 /* TERMINA BARRA DE SCROLL */
