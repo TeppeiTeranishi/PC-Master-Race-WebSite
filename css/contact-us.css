@@ -1,3 +1,6 @@
+::-moz-selection {color: #000; background: #ffcd00;}
+::selection      {color: #000; background: #ffcd00;}
+
 body {
   background: #181818;
   color: #fff;
@@ -21,6 +24,26 @@ body::after {
   /* position: absolute; */
   z-index: -1;
 }
+
+nav a:hover {
+  color: #C0C0C0;
+}
+
+.navbar-toggler {
+  font-size: 16px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232,208,81, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(232,208,81, 0.5);
+} 
 
 /* //////////////
    Footer
@@ -438,3 +461,28 @@ textarea.input100 {
     clear: none !important;
   }
 }
+
+
+
+/* scrollbar */
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #ffcd00;
+}
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgb(46,54,69);
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ffcd00; 
+  background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,transparent)
+}
+/* this is for firefox */
+:root{
+  scrollbar-face-color: #ffcd00; /* Firefox 63 compatibility */
+  scrollbar-track-color: rgb(46,54,69); /* Firefox 63 compatibility */
+  scrollbar-color: #ffcd00 rgb(46,54,69);
+  scrollbar-width: thin;
+}
+/* end scrollbar */
