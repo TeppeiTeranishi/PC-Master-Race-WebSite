@@ -98,11 +98,11 @@ MAIN CAROUSEL STYLES
 ---------------------------*/
 .carousel-inner img {
     width: 100%;
-    max-height: 100vh;
+    max-height: 94.8vh;
 }
 
 .carousel-inner {
-    height: 100vh;
+    height: 94.8vh;
 }
 
 /* CAROUSEL CLIENTS ABOUT US*/
@@ -204,44 +204,171 @@ footer small{
 /*------------------------
 SHOW DE LOS MEDIAS QUERIES
 ------------------------*/
+@media (min-width: 320px) and (max-width: 359px){
+    .carousel-inner{
+        width: 100%;
+        height: auto;
+        margin-top: 31% !important;
+    }
+    .carousel-inner h5{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+    }
+    .carousel-inner p{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+    }
+    iframe{
+        width: 100%;
+        height: 200px;
+    }
+}
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 480px){
+    .carousel-inner{
+        width: 100%;
+        height: auto;
+        margin-top: 66.4px !important;
+    }
+    .carousel-inner h5{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+    }
+    .carousel-inner p{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+    }
+    iframe{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
     html {
         font-size: 16px;
     }
-}
-
-@media only screen and (max-width: 800px) {
     .carousel-inner{
-            width: 100%;
-            height: auto;
-            background-size: 100% !important;
-            background-position: center center;
-            min-height: auto;
-            margin-top: 18%;
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+        background-position: center center;
+        min-height: auto;
+        margin-top: 11% !important;
     }
-}
-
-@media only screen and (max-width: 800px) {
     .carousel-inner h5{
-            color: #ffcd00;
-            background-color: rgba(0, 0, 0, 0.8);
-            font-size: 14px;
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
     }
     .carousel-inner p{
-            color: #ffcd00;
-            background-color: rgba(0, 0, 0, 0.8);
-            font-size: 14px;
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
     }
-}
-
-@media only screen and (max-width: 800px) {
     iframe{
-            width: 100%;
-            height: 100%;
+        width: 100%;
+        height: 250px;
+    } 
+} 
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    html {
+        font-size: 16px;
+    }
+    .carousel-inner{
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+        background-position: center center;
+        min-height: auto;
+        margin-top: 8%;
+    }
+    .carousel-inner h5{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+    }
+    .carousel-inner p{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+    }
+    iframe{
+        width: 100%;
+        height: 200px;
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+    html {
+        font-size: 16px;
+    }
+    .carousel-inner{
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+        background-position: center center;
+        min-height: auto;
+        margin-top: 18%;
+    }
+    .carousel-inner h5{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+    }
+    .carousel-inner p{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+    }
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+    html {
+        font-size: 16px;
+    }
+    .carousel-inner{
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+        background-position: center center;
+        min-height: auto;
+        margin-top: 18%;
+    }
+    .carousel-inner h5{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .carousel-inner p{
+        color: #ffcd00;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1281px){
+    html {
+        font-size: 16px;
+    }
+    iframe{
+        width: 100%;
+    } 
+}
 
 /* scrollbar */
 ::-webkit-scrollbar{
