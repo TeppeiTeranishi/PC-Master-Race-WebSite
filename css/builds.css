@@ -107,7 +107,31 @@ footer small{
     }
 }
 
-
+/* estilos del boton subir */
+.boton-subir {
+    display: none;
+    background: #ffcd00;
+    border: thin solid #c79d00;
+    border-radius: 3px;
+    position: fixed;
+    right: 15px;
+    bottom: 2px;
+    z-index: 999999999;
+}
+/* evento hover */
+.boton-subir:hover {
+    box-shadow: 0px 2px 10px 0px rgba(255,255,255, 0.9);
+}
+/* estilos para el tag i */
+.boton-subir i {
+    color: rgba(0, 0, 0, 0.95);
+    font-size: 1.5em;
+    padding: 10px 10px 10px 7px;
+    transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+}
+/* fin de los estilos del boton subir  */
 
 /* scrollbar */
 ::-webkit-scrollbar{
