@@ -184,6 +184,7 @@ footer a {
 
 footer a:hover {
     color: #C0C0C0;
+    text-decoration: none;
 }
 
 footer .list-inline .list-inline-item {
@@ -256,7 +257,7 @@ SHOW DE LOS MEDIAS QUERIES
     .carousel-inner{
         width: 100%;
         height: auto;
-        margin-top: 66.4px !important;
+        margin-top: 66px !important;
     }
     .carousel-inner h5{
         color: #ffcd00;
